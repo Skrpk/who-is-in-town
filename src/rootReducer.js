@@ -1,3 +1,7 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({});
+import mainReducer from './modules/Main/mainReducer';
+
+export default combineReducers({
+  main: mainReducer,
+});

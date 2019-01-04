@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 
 import store from './store';
 import logo from './logo.svg';
+import Main from './modules/Main';
 import './App.css';
 
 const MainMenu = () =>
@@ -59,25 +60,37 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router>
-          <div className="App">
-            <header className="App-header">
-              {/*<img src={logo} className="App-logo" alt="logo" />*/}
-              <h1 className="App-title">Welcome to React</h1>
-              <MainMenu/>
-            </header>
-            <div>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/code" component={Code} />
-              <Route exact path="/contact" component={Contact} />
-              <Route exact path="/presence" component={info} />
-            </div>
-          </div>
-        </Router>
+        <div>
+          <Main />
+        </div>
       </Provider>
     );
   }
 }
+
+// class AAA extends React {
+//   render() {
+//     return (
+//       {/*<Provider store={store}>*/}
+//     {/*<Router>*/}
+//     {/*<div className="App">*/}
+//     {/*<header className="App-header">*/}
+//     {/*/!*<img src={logo} className="App-logo" alt="logo" />*!/*/}
+//     {/*<h1 className="App-title">Welcome to React</h1>*/}
+//     {/*<MainMenu/>*/}
+//     {/*</header>*/}
+//     {/*<div>*/}
+//     {/*<Route exact path="/" component={Home} />*/}
+//     {/*<Route exact path="/about" component={About} />*/}
+//     {/*<Route exact path="/code" component={Code} />*/}
+//     {/*<Route exact path="/contact" component={Contact} />*/}
+//     {/*<Route exact path="/presence" component={info} />*/}
+//     {/*</div>*/}
+//     {/*</div>*/}
+//     {/*</Router>*/}
+//     {/*</Provider>*/}
+//     );
+//   }
+// }
 
 export default App;
