@@ -2,5 +2,35 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.search {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.artist-data {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.artist-events {
+    width: 90%;
+}
+
+.favorites {
+    width: 45%;
+    margin: 20px auto;
+}
+
+.favorites-title {
+    margin: 0;
+}
+
+span {
+    word-wrap: break-word
 }

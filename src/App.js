@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import logo from './logo.svg';
 import Main from './modules/Main';
+import EventDetails from './modules/EventDetails';
 import './App.css';
 
 const MainMenu = () =>
@@ -60,9 +61,12 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div>
-          <Main />
-        </div>
+        <Router>
+          <div>
+            <Route exact path="/" component={Main} />
+            <Route exact path="/event/:id" component={EventDetails} />
+          </div>
+        </Router>
       </Provider>
     );
   }

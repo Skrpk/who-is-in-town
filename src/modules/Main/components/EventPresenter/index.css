@@ -1,0 +1,8 @@
+.event-presenter {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.event-presenter:hover {
+    cursor: pointer;
+}

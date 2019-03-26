@@ -1,0 +1,16 @@
+.head-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.event-data-wrapper {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.data-block {
+    padding: 10px;
+    margin-bottom: 10px;
+}

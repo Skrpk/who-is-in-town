@@ -1,6 +1,25 @@
-.wrapper {
+.artist-info-wrapper {
+    width: 90%;
+}
+
+.artist-info {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    margin: 20px 0;
+    padding: 5px;
+    background-color: rgba(102, 255, 255, .06);
+}
+
+.artist-image {
+    /*width: 200px;*/
+    /*height: 150px;*/
+    object-fit: scale-down;
+    max-width: 30%;
+    transform: scale(0.7);
+}
+
+.info {
+
 }
